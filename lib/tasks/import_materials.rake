@@ -16,6 +16,11 @@ namespace :db do
           name = supplier.text
           material.supplier = Supplier.find_or_create_by!(name: name)
         end
+        supplierInfo.xpath('supplierName').each do |supplier|
+          puts "\n **Creating supplier: #{supplier}** \n"
+          name = supplier.text
+          material.supplier = Supplier.find_or_create_by!(name: name)
+        end
       end
 
       xml_doc.xpath('//mediaInfo').each do |media|
