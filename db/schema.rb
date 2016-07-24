@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20160724190136) do
     t.time     "eom"
     t.string   "aspect_ratio",         limit: 255
     t.string   "material_type",        limit: 255
-    t.string   "deliveryChannelGroup", limit: 255
+    t.string   "delivery_channel_group", limit: 255
     t.integer  "supplier_id",          limit: 4
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false

@@ -8,7 +8,7 @@ class CreateMaterials < ActiveRecord::Migration
       t.time :eom
       t.string :aspect_ratio
       t.string :material_type
-      t.string :deliveryChannelGroup
+      t.string :delivery_channel_group
       t.references :supplier, index: true, foreign_key: true
 
       t.timestamps null: false

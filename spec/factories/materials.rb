@@ -7,7 +7,7 @@ FactoryGirl.define do
     eom "2016-07-24 20:01:36"
     aspect_ratio "MyString"
     material_type "MyString"
-    deliveryChannelGroup "MyString"
+    delivery_channel_group "MyString"
     supplier nil
   end
 end

@@ -54,6 +54,6 @@ class MaterialsController < ApplicationController
     end
 
     def material_params
-      params.require(:material).permit(:title, :episode, :year, :som, :eom, :aspect_ratio, :material_type, :deliveryChannelGroup, :supplier_id)
+      params.require(:material).permit(:title, :episode, :year, :som, :eom, :aspect_ratio, :material_type, :delivery_channel_group, :supplier_id)
     end
 end
