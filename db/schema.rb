@@ -11,6 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160724190136) do
 
+  create_table "materials", force: :cascade do |t|
+    t.string   "title",                limit: 255
+    t.integer  "episode",              limit: 4
+    t.integer  "year",                 limit: 4
+    t.time     "som"
+    t.time     "eom"
+    t.string   "aspect_ratio",         limit: 255
+    t.string   "material_type",        limit: 255
+    t.string   "deliveryChannelGroup", limit: 255
+    t.integer  "supplier_id",          limit: 4
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  add_index "materials", ["supplier_id"], name: "index_materials_on_supplier_id", using: :btree
+
+  create_table "suppliers", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_foreign_key "materials", "suppliers"
 end
