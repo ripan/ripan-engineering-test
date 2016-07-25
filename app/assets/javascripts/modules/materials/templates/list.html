@@ -1,0 +1,18 @@
+﻿<div ng-controller="MaterialsCtrl">
+    <div class="row well">
+        <div class="col-md-4">Title</div>
+        <div class="col-md-2">Duration</div>
+        <div class="col-md-2">Supplier</div>
+        <div class="col-md-4">History</div>
+    </div>
+    <ul class="list-group">
+        <li ng-repeat="material in materials" class="list-group-item row">
+            <div class="col-md-4">{{material.title}}</div>
+            <div class="col-md-2">{{material.duration}}</div>
+            <div class="col-md-2">{{material.supplier}}</div>
+            <div class="col-md-4">
+                {{material.history}}
+            </div>
+        </li>
+    </ul>
+</div>

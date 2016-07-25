@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Honeycomb TV</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <materials-list id="angular-open-frames"></materials-list>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">© Honeycomb 2015.</p>
+      </div>
+    </footer>
+    <script>
+    angular.element(document).ready(function () {
+    angular.bootstrap($("#angular-open-frames"), ["MaterialsModule"]);
+    });
+    </script>
+  </body>
+</html>
