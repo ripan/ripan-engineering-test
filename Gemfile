@@ -16,6 +16,8 @@ gem 'puma'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
+gem "audited-activerecord", "~> 4.0"
+
 group :test, :development do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
