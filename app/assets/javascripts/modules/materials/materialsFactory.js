@@ -3,7 +3,7 @@
 
     var apiUrl = '/materials'
 
-    angular.module('MaterialsModule').factory("Material", ['$resource', function($resource) {
+    angular.module('honeycomb.materials').factory("Material", ['$resource', function($resource) {
         return $resource(apiUrl, { id: '@id' }, {
             update: { method: 'PATCH' },
         });

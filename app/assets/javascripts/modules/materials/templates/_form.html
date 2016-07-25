@@ -1,0 +1,30 @@
+<div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" data-ng-model="vm.user.name" placeholder="Enter Name">
+</div>
+<div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" data-ng-model="vm.profile.title" placeholder="Enter Title">
+</div>
+<div class="form-group">
+    <label>Tags</label>
+    <input type="text" class="form-control" data-ng-model="vm.profile.tag_list" placeholder="Enter Tags">
+</div>
+<div class="form-group">
+    <label>Description</label>
+    <textarea rows="4" cols="50" class="form-control" data-ng-model="vm.profile.description" placeholder="Enter Description"></textarea>
+</div>
+<div class="form-group">
+    <label>Tags</label>
+    <input type="checkbox" class="form-control" data-ng-model="vm.profile.is_active" placeholder="Enter Tags">
+</div>
+<div class="form-group">
+    <label>Postcode</label>
+    <input type="text" class="form-control" data-ng-model="vm.address.postcode" placeholder="Enter Postcode">
+</div>
+
+<div class="form-group">
+    <a class="btn btn-sm btn-white" ui-sref="vm.profiles#show(vm.profile)" ng-if="vm.profile.id">Cancel</a>
+    <button class="btn btn-sm btn-primary" id="save">Save changes</button>
+    <a class="btn btn-sm btn-default" ui-sref="profiles">List profiles</a>
+</div>

@@ -3,7 +3,7 @@
 
     // describe('Controller: MaterialsCtrl', function() {
 
-    //     beforeEach(angular.mock.module('MaterialsModule'));
+    //     beforeEach(angular.mock.module('honeycomb.materials'));
 
     //     var MaterialsCtrl, Material, $httpBackend, scope;
 

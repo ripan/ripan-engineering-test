@@ -1,0 +1,35 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h2>New profile Form</h2>
+		<ol class="breadcrumb">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a>Forms</a>
+			</li>
+			<li class="active">
+				<strong>profile Form</strong>
+			</li>
+		</ol>
+	</div>
+	<div class="col-lg-2">
+	</div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="ibox float-e-margins">
+				<div class="ibox-title">
+					<h5>profile</h5>
+					<div ibox-tools></div>
+				</div>
+				<div class="ibox-content" data-ng-controller="ProfilesCtrl as vm">
+					<form class="form" role="form" data-ng-submit="vm.create()">
+						<div ng-include="'profiles/_form.html'"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

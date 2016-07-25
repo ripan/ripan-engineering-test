@@ -1,0 +1,41 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h2>profile Details</h2>
+	</div>
+	<div class="col-lg-2">
+	</div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="ibox float-e-margins">
+				<div class="ibox-content" ng-controller="ProfilesCtrl as vm" ng-init="vm.show()">
+				{{profile = vm.profile}}
+					<div class="row">
+						<div class="col-lg-5">
+							<dl class="dl-horizontal resource-details">
+								<dt>Title :</dt>
+								<dd>{{profile.title}}</dd>
+								<dt>Description :</dt>
+								<dd>{{profile.description}}</dd>
+								<dt>Tags :</dt>
+								<dd>{{profile.tags}}</dd>
+								<dt>User :</dt>
+								<dd>{{profile.user_id}}</dd>
+							</dl>
+						</div>
+					</div>
+					<a class="btn btn-sm btn-danger"  ng-click="vm.destroy(profile)">Delete</a>
+                    <a class="btn btn-sm btn-info" ui-sref="profiles#edit(profile)">Edit</a>
+					<a class="btn btn-sm btn-default" ui-sref="profiles">List profiles</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+<dl class="dl-horizontal" ng-repeat="(key,value) in profile">
+	<dt>{{key}} :</dt>
+	<dd>{{value}}</dd>
+</dl>
+-->

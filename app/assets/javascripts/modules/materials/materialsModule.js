@@ -1,5 +1,5 @@
 ﻿(function() {
     'use strict';
 
-    var materialsModule = angular.module('MaterialsModule', ['honeycomb.core']);
+    var materialsModule = angular.module('honeycomb.materials', ['honeycomb.core']);
 })();
