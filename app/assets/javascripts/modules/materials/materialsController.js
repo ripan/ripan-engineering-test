@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('honeycomb.materials').controller('MaterialsCtrl', ['$scope', 'Material', function($scope, Material) {
-debugger;
+
         var vm = this;
 
         vm.index = index;

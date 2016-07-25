@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="honeycomb">
   <head>
     <title>Honeycomb TV</title>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -7,19 +7,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <materials-list id="angular-open-frames"></materials-list>
-      </div>
+
+    <div ng-view></div>
+<!--       <div class="row">
+        <materials-list id="angular-materials-list"></materials-list>
+      </div> -->
     </div>
     <footer class="footer">
       <div class="container">
         <p class="text-muted">© Honeycomb 2015.</p>
       </div>
     </footer>
-    <script>
+<!--     <script>
     angular.element(document).ready(function () {
-    angular.bootstrap($("#angular-open-frames"), ["honeycomb.materials"]);
+    angular.bootstrap($("#angular-materials-list"), ["honeycomb.materials"]);
     });
-    </script>
+    </script> -->
   </body>
 </html>
