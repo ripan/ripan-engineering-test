@@ -4,7 +4,7 @@ class MaterialSerializer < ActiveModel::Serializer
   has_one :supplier
 
   def supplier
-    object.supplier.name
+    object.supplier
   end
 
   def history

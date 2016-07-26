@@ -1,5 +1,5 @@
 class SupplierSerializer < ActiveModel::Serializer
-  attributes :id, :name, :history
+  attributes :id, :name
 
   def history
     object.audits.map do |j|

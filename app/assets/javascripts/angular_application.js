@@ -3,13 +3,6 @@
 
 	angular.module('honeycomb', [
         /*
-         * Order is not important. Angular makes a
-         * pass to register all of the modules listed
-         * and then when app.dashboard tries to use app.data,
-         * its components are available.
-         */
-
-        /*
          * Everybody has access to these.
          * We could place these under every feature area,
          * but this is easier to maintain.
@@ -20,6 +13,7 @@
          * Feature areas
          */
          'honeycomb.materials',
+         'honeycomb.suppliers',
 
 
          ]);
@@ -45,16 +39,9 @@
 				pageTitle: 'Materials'
 			},
 		})
-		.state('materials#new', {
-			url: "/materials/new",
-			templateUrl: "/assets/modules/materials/templates/new.html",
-			data: {
-				pageTitle: 'New Material'
-			},
-		})
 		.state('materials#edit', {
 			url: "/materials/:id/edit",
-			templateUrl: "/assets/modules/materials/templates/edit.html",
+			templateUrl: "assets/modules/materials/templates/edit.html",
 			data: {
 				pageTitle: 'Edit Material'
 			},

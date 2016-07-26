@@ -17,7 +17,7 @@
                         <td>{{ $index + 1}}</td>
                         <td>{{ material.title}}</td>
                         <td>{{ material.duration}}</td>
-                        <td>{{ material.supplier}}</td>
+                        <td>{{ material.supplier.name}}</td>
                         <td>
                             <ul class="list-unstyled">
                                 <li ng-repeat="history in material.history">

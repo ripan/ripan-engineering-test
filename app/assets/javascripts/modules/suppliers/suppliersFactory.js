@@ -1,9 +1,9 @@
 ﻿(function() {
     'use strict';
 
-    var apiUrl = '/materials/:id'
+    var apiUrl = '/suppliers/:id'
 
-    angular.module('honeycomb.materials').factory("Material", ['$resource', function($resource) {
+    angular.module('honeycomb.suppliers').factory("Supplier", ['$resource', function($resource) {
         return $resource(apiUrl, { id: '@id' }, {
             update: { method: 'PATCH' },
         });

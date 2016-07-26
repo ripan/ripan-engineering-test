@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="honeycomb">
-  <head>
-    <title>Honeycomb TV</title>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
-  <body>
+<head>
+  <title>Honeycomb TV</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <div class="container">
+    <div ui-view></div>
+  </div>
+  <footer class="footer">
     <div class="container">
-
-    <div ng-view></div>
-<!--       <div class="row">
-        <materials-list id="angular-materials-list"></materials-list>
-      </div> -->
+      <p class="text-muted">© Honeycomb 2016.</p>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">© Honeycomb 2015.</p>
-      </div>
-    </footer>
-<!--     <script>
-    angular.element(document).ready(function () {
-    angular.bootstrap($("#angular-materials-list"), ["honeycomb.materials"]);
-    });
-    </script> -->
-  </body>
+  </footer>
+</body>
 </html>

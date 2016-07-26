@@ -26,9 +26,12 @@
 
 //= require modules/core/core.module.js
 
+
+//= require modules/suppliers/suppliersModule.js
+//= require modules/suppliers/suppliersFactory.js
+
 //= require modules/materials/materialsModule.js
 //= require modules/materials/materialsDirective.js
 //= require modules/materials/materialsFactory.js
 //= require modules/materials/materialsController.js
 //= require modules/materials/materialsTests.js
-
