@@ -21,6 +21,7 @@
 //= require angular-mocks
 //= require angular-bootstrap
 //= require angular-rails-templates
+//= require jasmine-core
 
 //= require angular_application
 

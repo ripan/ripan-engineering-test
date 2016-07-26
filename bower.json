@@ -23,6 +23,7 @@
     "angular-mocks": "^1.5.8",
     "angular-animate": "^1.5.8",
     "angular-bootstrap": "^2.0.0",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "jasmine-core": "jasmine#^2.4.1"
   }
 }
