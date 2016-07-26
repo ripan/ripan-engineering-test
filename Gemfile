@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby "2.2.3"
 
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.0'
 
 gem 'rails-api'
 
@@ -22,7 +22,7 @@ gem 'jquery-rails'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
-gem 'angular-rails-templates'
+gem 'angular-rails-templates', '0.2.0'
 
 gem 'mysql2', '~> 0.3.18'
 
@@ -35,12 +35,15 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem "audited-activerecord", "~> 4.0"
 
 group :test, :development do
+  gem 'byebug'
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'database_cleaner', '1.5.1'
   gem "json-schema"
 end
+
+gem 'sprockets', '2.12.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

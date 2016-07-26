@@ -35,3 +35,5 @@
 //= require modules/materials/materialsFactory.js
 //= require modules/materials/materialsController.js
 //= require modules/materials/materialsTests.js
+
+//= require_tree ./templates

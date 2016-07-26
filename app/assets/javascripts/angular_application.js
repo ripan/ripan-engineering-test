@@ -34,21 +34,21 @@
 
 		.state('materials', {
 			url: "/materials",
-			templateUrl: "assets/modules/materials/templates/index.html",
+			templateUrl: "materials/index.html",
 			data: {
 				pageTitle: 'Materials'
 			},
 		})
 		.state('materials#edit', {
 			url: "/materials/:id/edit",
-			templateUrl: "assets/modules/materials/templates/edit.html",
+			templateUrl: "materials/edit.html",
 			data: {
 				pageTitle: 'Edit Material'
 			},
 		})
 		.state('materials#show', {
 			url: "/materials/:id",
-			templateUrl: "/assets/modules/materials/templates/show.html",
+			templateUrl: "materials/show.html",
 			data: {
 				pageTitle: 'Material Details'
 			},
