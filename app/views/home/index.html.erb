@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html ng-app="honeycomb">
-<head>
-  <title>Honeycomb TV</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-</head>
-<body>
-  <div class="container">
-    <div ui-view></div>
-  </div>
-  <footer class="footer">
+  <head>
+    <title>Honeycomb TV</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Honeycombtv</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref="materials">List Materials</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
-      <p class="text-muted">© Honeycomb 2016.</p>
+      <div ui-view></div>
     </div>
-  </footer>
-</body>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">© Honeycomb 2016.</p>
+      </div>
+    </footer>
+  </body>
 </html>
