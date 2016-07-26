@@ -14,7 +14,7 @@
     <label>Supplier</label>
     <select name="supplier" class="form-control" ng-options="supplier.name for supplier in vm.suppliers track by supplier.id" ng-model="vm.material.supplier"></select>
 </div>
-{{vm.material.supplier}}
+
 <hr> 
 <div class="form-group">
     <a class="btn btn-sm btn-success" ui-sref="materials#show(vm.material)" ng-if="vm.material.id">Show</a>
