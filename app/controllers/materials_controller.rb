@@ -31,7 +31,9 @@ class MaterialsController < ApplicationController
   # PATCH/PUT /materials/1.json
   def update
     @material = Material.find(params[:id])
-    @material.supplier = Supplier.find(params[:material][:supplier][:id])
+    if params[:material][:supplier]
+      @material.supplier = Supplier.find(params[:material][:supplier][:id])
+    end
 
     if @material.update(material_params)
       head :no_content
@@ -50,11 +52,11 @@ class MaterialsController < ApplicationController
 
   private
 
-    def set_material
-      @material = Material.find(params[:id])
-    end
+  def set_material
+    @material = Material.find(params[:id])
+  end
 
-    def material_params
-      params.require(:material).permit(:title, :episode, :year, :som, :eom, :aspect_ratio, :material_type, :delivery_channel_group, :supplier_id)
-    end
+  def material_params
+    params.require(:material).permit(:title, :episode, :year, :som, :eom, :aspect_ratio, :material_type, :delivery_channel_group, :supplier_id)
+  end
 end

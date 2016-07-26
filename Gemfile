@@ -44,6 +44,7 @@ group :test, :development do
 end
 
 gem 'sprockets', '2.12.3'
+gem 'ffaker'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
