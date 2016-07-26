@@ -31,6 +31,7 @@ class MaterialsController < ApplicationController
   # PATCH/PUT /materials/1.json
   def update
     @material = Material.find(params[:id])
+    @material.supplier = Supplier.find(params[:material][:supplier][:id])
 
     if @material.update(material_params)
       head :no_content
