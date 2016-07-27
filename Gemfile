@@ -41,6 +41,7 @@ group :test, :development do
   gem 'capybara'
   gem 'database_cleaner', '1.5.1'
   gem "json-schema"
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 gem 'sprockets', '2.12.3'
