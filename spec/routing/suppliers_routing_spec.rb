@@ -7,16 +7,8 @@ RSpec.describe SuppliersController, :type => :routing do
       expect(:get => "/suppliers").to route_to("suppliers#index")
     end
 
-    it "routes to #new" do
-      expect(:get => "/suppliers/new").to route_to("suppliers#new")
-    end
-
     it "routes to #show" do
       expect(:get => "/suppliers/1").to route_to("suppliers#show", :id => "1")
-    end
-
-    it "routes to #edit" do
-      expect(:get => "/suppliers/1/edit").to route_to("suppliers#edit", :id => "1")
     end
 
     it "routes to #create" do

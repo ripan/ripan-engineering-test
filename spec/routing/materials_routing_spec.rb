@@ -7,16 +7,8 @@ RSpec.describe MaterialsController, :type => :routing do
       expect(:get => "/materials").to route_to("materials#index")
     end
 
-    it "routes to #new" do
-      expect(:get => "/materials/new").to route_to("materials#new")
-    end
-
     it "routes to #show" do
       expect(:get => "/materials/1").to route_to("materials#show", :id => "1")
-    end
-
-    it "routes to #edit" do
-      expect(:get => "/materials/1/edit").to route_to("materials#edit", :id => "1")
     end
 
     it "routes to #create" do

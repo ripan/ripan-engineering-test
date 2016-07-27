@@ -36,7 +36,7 @@ RSpec.describe "Materials API", :type => :request do
       get "/materials/#{material.to_param}"
 
       json = JSON.parse(response.body)
-      puts json
+      
       # test for the 200 status-code
       expect(response.status).to be(200)
       expect(response).to be_success
